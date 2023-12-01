@@ -1,0 +1,74 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting Your Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color:  #081b29;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            color: #00abf0;
+               }
+
+        main {
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #00abf0;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #ffffff;
+        }
+        .list{
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hosting Your Website</h1>
+        <p>A simple guide to hosting your website on a server.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Hosting</h2>
+            <p>Hosting refers to the process of storing, serving, and maintaining files for a website or web application on a server. When you create a website, you need a place to store its files, including HTML, CSS, JavaScript, images, and other assets. This is where hosting comes into play. A hosting service provides the infrastructure and resources needed to make your website accessible on the internet.</p>
+        </section>
+
+        <section>
+            <h2>Configuring IIS</h2>
+            <ol class="list">
+                <li>Click on <strong>Start</strong> &rarr; <strong>Control Panel</strong> &rarr; In the Programs category, Click on <strong>Get Programs</strong> &rarr; Click on <strong>Turn Windows Features on or off</strong> &rarr; A new dialog box will appear in which select the <strong>Internet Information Services</strong> &rarr; Click <strong>Ok</strong></li>
+                <li>It will install Internet Information Services on your computer, and a folder named <strong>INETPUB</strong> will be created on C drive</li>
+                <li>Now check IIS by opening Internet Explorer and typing the address <code>http://localhost</code> or <code>http://ipaddress</code> (IP address of your system) or <code>http://computername</code> (Your computer name) or <code>http://fullcomputernamewithdomain</code> (e.g., <code>http://cl-101.jiet.co.in</code>)</li>
+                <li>A default page named <strong>IISstart.html</strong> will open.</li>
+                <li>Create a web page named <strong>index.html</strong> and copy it inside the directory <code>C:\Inetpub\wwwroot</code></li>
+                <li>Now check your home page by opening the local site as done in step 3. Now your home page will open</li>
+                <li>By default, the default physical path for the website is <code>C:\Inetpub\wwwroot</code>. You can add your folder as a default physical path.</li>
+                <li>Create a folder named as <strong>yourname</strong> inside the folder <code>C:\Inetpub\wwwroot\</code> and cut <strong>index.html</strong> file from the folder <code>wwwroot</code> and paste it inside the folder <strong>yourname</strong> (like ram, mohan, etc.). Now the physical path of your website is now <code>C:\Inetpub\wwwroot\yourname</code></li>
+                <li>In order to change the default website path to your desired website path, Click on <strong>Start</strong> &rarr; <strong>Control Panel</strong> &rarr; Click on drop-down icon on Viewed by <strong>Category</strong> &rarr; Click on <strong>Small Icons</strong> &rarr; Click on <strong>Administrative Tools</strong> &rarr; click on <strong>Internet Information Services Manager</strong> &rarr; Click on computer name in the left side in the <strong>Connections</strong> menu &rarr; Click on <strong>sites</strong> &rarr; Select <strong>Basic setting</strong> in the options given at the right side.</li>
+                <li>A new dialog box named as <strong>Edit site</strong> will open. Change the physical path from <code>%SystemDrive%\inetpub\wwwroot</code> to <code>%SystemDrive%\inetpub\wwwroot\yourname</code> &rarr; Click <strong>ok</strong></li>
+                <li>Now again check your home page by opening the local site as done in step 3. Now your home page will open</li>
+            </ol>
+        </section>
+    </main>
+
+    
+
+</body>
+</html>
+
+    

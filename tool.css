@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif; /* Change the font family to a more readable one */
+  }
+  
+  body {
+    background-color: #081b29; /* Use a light background color */
+  }
+  
+  #main {
+    position: relative;
+    overflow: hidden;
+  }
+  
+   #pages1, #pages2, #pages3, #pages4 {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  
+  
+  
+  #pages1 {
+    height: 100vh;
+    width: 100vw;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #pages1 .tool-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #fff;
+  }
+  p{
+    color: #fff;
+  }
+  
+  #pages1 img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px; 
+    border-radius: 10px;
+  }
+  
+  #pages1 .tool-details {
+    color: #fff;
+    text-align: left; 
+    max-width: 600px;
+  }
+  
+  #pages1 .tool-description {
+    font-size: 35px;
+    margin: 0;
+  }
+  
+  #pages2 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #pages2 .tool-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #pages2 img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 20px; 
+    border-radius: 10px;
+  }
+  
+  #pages2 .tool-details {
+    color: #fff;
+    text-align: right; 
+    max-width: 600px;
+  }
+  
+  #pages2 .tool-description {
+    font-size: 35px;
+    margin: 0;
+  }
+  
+  #pages3 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #pages3 .tool-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #pages3 img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px; 
+    border-radius: 10px;
+  }
+  
+  #pages3 .tool-details {
+    color: #fff;
+    text-align: left; 
+    max-width: 600px;
+  }
+  
+  #pages3 .tool-description {
+    font-size: 35px;
+    margin: 0;
+  }
+  h2{
+    color: #00abf0;
+  }
+  
+  
